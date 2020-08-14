@@ -32,7 +32,7 @@ spring:
 
 ### 2.多数据源配置
 
-> * ### 配置信息datasource: master: jdbc-url: XXXX
+> * 配置信息datasource: master: jdbc-url: XXXX
 
 ```java
 server:
