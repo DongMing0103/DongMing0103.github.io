@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      springboot配置数据库（单数据源、多数据源区别）
-subtitle:   springboot配置数据库（单数据源、多数据源区别）
+title:      springboot数据源配置
+subtitle:   单数据源、多数据源区别
 date:       2020-03-19
 author:     dm
 header-img: img/post-bg-coffee.jpg
