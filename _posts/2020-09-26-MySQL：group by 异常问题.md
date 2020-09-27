@@ -1,17 +1,21 @@
+---
 layout:     post
 title:      MySQL问题
 subtitle:   group by 异常问题
 date:       2020-09-26
 author:     dm
-header-img: img/post-bg-BJJ.jpg
+header-img: img/post-bg-kuaidi.jpg
 catalog: true
 tags:
+    - MySQL
 
-​	-MySQL
 
 ---
 
+
+
 ## 报错问题
+
 ```
 Expression #2 of SELECT list is not in GROUP BY clause and contains
 nonaggregated column ‘sss.month_id’ which is not functionally

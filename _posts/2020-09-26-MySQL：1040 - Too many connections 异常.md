@@ -1,3 +1,4 @@
+---
 layout:     post
 title:      MySQL问题
 subtitle:   1040 - Too many connections
@@ -6,12 +7,12 @@ author:     dm
 header-img: img/post-bg-kuaidi.jpg
 catalog: true
 tags:
-
     - MySQL
 
 
-
 ---
+
+
 
 ## 异常报错 1040 - Too many connections
 
