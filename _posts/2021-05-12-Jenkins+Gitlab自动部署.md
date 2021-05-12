@@ -4,7 +4,7 @@ title:      Jenkins + Gitlab自动部署
 subtitle:   
 date:       2021-05-12
 author:     dm
-header-img: img/post-bg-mma-2.jpg
+header-img: img/post-bg-mma-4.jpg
 catalog: true
 tags:
 	- Jenkins
