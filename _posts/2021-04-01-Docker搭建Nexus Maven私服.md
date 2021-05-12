@@ -8,8 +8,8 @@ header-img: img/post-bg-mma-2.jpg
 catalog: true
 tags:
     - Docker
-	- Nexus
-	- maven
+    - Nexus
+    - maven
 
 
 ---
