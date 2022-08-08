@@ -60,7 +60,7 @@ docker run -d --name rabbitmq  -v /data/rabbitmq:/var/lib/rabbitmq
 ```
 
 ## 访问管理界面
-![访问管理界面](https://raw.githubusercontent.com/DongMing0103/MarkdownCloudImage/master/data/rabbitmq.jpg)
+![访问管理界面](https://raw.githubusercontents.com/DongMing0103/MarkdownCloudImage/master/data/rabbitmq.jpg)
 
 # 问题
 ## docker chown: changing ownership of '/var/lib/XXX': Permission denied

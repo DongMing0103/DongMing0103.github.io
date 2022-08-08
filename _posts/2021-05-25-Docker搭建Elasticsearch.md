@@ -49,7 +49,7 @@ docker run --name elasticsearch -p 9200:9200 -p 9300:9300 -d -e "discovery.type=
 
 `出现以下界面说安装成功`
 
-![浏览器启动成功页面](https://raw.githubusercontent.com/DongMing0103/MarkdownCloudImage/master/data/Elasticsearch%E5%90%AF%E5%8A%A8%E6%88%90%E5%8A%9F.jpg)
+![浏览器启动成功页面](https://raw.githubusercontents.com/DongMing0103/MarkdownCloudImage/master/data/Elasticsearch%E5%90%AF%E5%8A%A8%E6%88%90%E5%8A%9F.jpg)
 
 ## 安装Elasticsearch-head
 
@@ -99,7 +99,7 @@ docker restart 容器id
 
 `出现以下界面说明安装成功`
 
-![Elasticsearch-head安装](https://raw.githubusercontent.com/DongMing0103/MarkdownCloudImage/master/data/Elasticsearch-head%E5%AE%89%E8%A3%85.jpg)
+![Elasticsearch-head安装](https://raw.githubusercontents.com/DongMing0103/MarkdownCloudImage/master/data/Elasticsearch-head%E5%AE%89%E8%A3%85.jpg)
 
 ## 修改Elasticsearch-head配置，解决406错误码
 
