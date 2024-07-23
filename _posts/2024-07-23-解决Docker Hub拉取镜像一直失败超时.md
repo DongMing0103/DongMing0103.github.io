@@ -32,9 +32,9 @@ tags:
 
 **方式一：使用以下命令设置registry mirror：但是需要重启docker服务**
 
-```bash
+```shell
 sudo mkdir -p /etc/docker
-sudo tee /etc/docker/daemon.json <<-'EOF'
+sudo tee /etc/docker/daemon.json  
 
 {
     "registry-mirrors": [
@@ -47,7 +47,6 @@ sudo tee /etc/docker/daemon.json <<-'EOF'
     ]
 }
 
-EOF
 sudo systemctl daemon-reload
 sudo systemctl restart docker
 ```
@@ -59,7 +58,7 @@ sudo systemctl restart docker
 
 **方式二：如果您当前有正在运行的容器不方便重启Docker服务，则不用设置环境也可以直接使用，**用法示例：
 
-``` bash
+``` shell
 docker pull do.nark.eu.org/library/mysql:5.7
 ```
 
@@ -72,7 +71,7 @@ docker pull do.nark.eu.org/library/mysql:5.7
 
 通过搜索需要的镜像名称，进行`pull`拉取，用法示例：
 
-```bash
+```shell
 docker pull atomhub.openatom.cn/amd64/mysql:5.7
 ```
 
@@ -85,16 +84,15 @@ docker pull atomhub.openatom.cn/amd64/mysql:5.7
 专门为`Github`用户提供下载加速服务的代理站点。由于`Github`的下载速度在某些地区可能会受到限制，导致开发者在获取代码库、项目文件等资源时遇到困难。该代理站点通过优化的网络节点和高速服务器，为用户提供快速、稳定的`Github`资源下载服务。
 [站点地址](https://docker.888666222.xyz/)
 
-```bash
+```shell
 第一步：为了加速镜像拉取，你可以使用以下命令设置 registry mirror:
 
-sudo tee /etc/docker/daemon.json <<EOF
+sudo tee /etc/docker/daemon.json 
 
 {
     "registry-mirrors": ["https://docker.888666222.xyz"]
 }
 
-EOF
 第二步：为了避免 Worker 用量耗尽，你可以手动 pull 镜像然后 re-tag 之后 push 至本地镜像仓库:
 
 # 拉取 library 镜像
@@ -107,7 +105,7 @@ docker pull docker.888666222.xyz/coredns/coredns:latest
 
 ***使用代理拉取镜像***
 
-````bash
+````shell
 # 第一步：创建配置文件
 sudo mkdir -p /etc/systemd/system/docker.service.d
 sudo vim /etc/systemd/system/docker.service.d/http-proxy.conf
@@ -131,7 +129,7 @@ sudo systemctl show --property=Environment docker
 
 国外服务器拉取镜像后打包压缩到本地，然后传输到国内服务器，myimage为镜像名
 
-```bash
+```shell
 # 第一步：A服务器保存Docker镜像
 docker save myimage > myimage.tar
 
@@ -163,19 +161,18 @@ docker images
 小福利：
 近期`Rainbond社区`为了方便拉取`Docker`镜像,自主搭建了个镜像加速服务，采用`CloudFlare +`国外服务器`Nginx`反代的方案为`Rainbond`社区的用户们提供镜像加速服务。
 
-```bash
+```shell
 # 方式一：直接获取 Docker Hub 镜像
 docker pull docker.rainbond.cc/library/node:20
 docker pull docker.rainbond.cc/rainbond/rainbond:v5.17.2-release-allinone
 
 # 方式二：配置镜像加速器
-tee /etc/docker/daemon.json <<-'EOF'
+vim /etc/docker/daemon.json 
 
 {
   "registry-mirrors": ["https://docker.rainbond.cc"]
 }
 
-EOF
 systemctl daemon-reload
 systemctl restart docker
 ```
