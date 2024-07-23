@@ -18,7 +18,7 @@ tags:
 
 
 ## 解决Docker Hub国内无法访问方法
-提示：亲测有效果
+<font color='red'>提示：亲测有效果</font>
 
 2023年5月中旬，`hub.docker.com` “不知” 何种原因国内均无法正常访问了。当时只是官网不能访问，但是不影响pull镜像。
 
@@ -35,6 +35,7 @@ tags:
 ```bash
 sudo mkdir -p /etc/docker
 sudo tee /etc/docker/daemon.json <<-'EOF'
+
 {
     "registry-mirrors": [
         "https://do.nark.eu.org",
@@ -45,6 +46,7 @@ sudo tee /etc/docker/daemon.json <<-'EOF'
         "https://docker.nju.edu.cn"
     ]
 }
+
 EOF
 sudo systemctl daemon-reload
 sudo systemctl restart docker
@@ -65,7 +67,9 @@ docker pull do.nark.eu.org/library/mysql:5.7
 第三方镜像：
 
 `AtomHub`可信镜像中心 - 大部分需要的镜像都是有的。
-[可信镜像中心官网：](https://atomhub.openatom.cn/)
+
+[可信镜像中心官网](https://atomhub.openatom.cn/)
+
 通过搜索需要的镜像名称，进行`pull`拉取，用法示例：
 
 ```bash
@@ -79,15 +83,17 @@ docker pull atomhub.openatom.cn/amd64/mysql:5.7
 加速代理站点：
 
 专门为`Github`用户提供下载加速服务的代理站点。由于`Github`的下载速度在某些地区可能会受到限制，导致开发者在获取代码库、项目文件等资源时遇到困难。该代理站点通过优化的网络节点和高速服务器，为用户提供快速、稳定的`Github`资源下载服务。
-[站点地址：](https://docker.888666222.xyz/)
+[站点地址](https://docker.888666222.xyz/)
 
 ```bash
 第一步：为了加速镜像拉取，你可以使用以下命令设置 registry mirror:
 
 sudo tee /etc/docker/daemon.json <<EOF
+
 {
     "registry-mirrors": ["https://docker.888666222.xyz"]
 }
+
 EOF
 第二步：为了避免 Worker 用量耗尽，你可以手动 pull 镜像然后 re-tag 之后 push 至本地镜像仓库:
 
@@ -148,7 +154,7 @@ docker images
 | 提供商         | 地址                                    |
 | -------------- | --------------------------------------- |
 | DaoCloud       | https://docker.m.daocloud.io            |
-| 阿里云         | https://<your_code>.mirror.aliyuncs.com |
+| 阿里云         | https://(your_code).mirror.aliyuncs.com |
 | Docker镜像代理 | https://dockerproxy.com                 |
 | 百度云         | https://mirror.baidubce.com             |
 | 南京大学       | https://docker.nju.edu.cn               |
@@ -164,9 +170,11 @@ docker pull docker.rainbond.cc/rainbond/rainbond:v5.17.2-release-allinone
 
 # 方式二：配置镜像加速器
 tee /etc/docker/daemon.json <<-'EOF'
+
 {
   "registry-mirrors": ["https://docker.rainbond.cc"]
 }
+
 EOF
 systemctl daemon-reload
 systemctl restart docker
@@ -175,6 +183,9 @@ systemctl restart docker
 [技术栈参考LINK](https://www.rainbond.com/docs/quick-start/quick-install)
 
 [Docker Hub 镜像加速：]( https://gitee.com/wanfeng789/docker-hub)
+
 [国内无法访问下载Docker镜像的多种解决方案：](https://www.bilibili.com/read/cv35387254/)
+
 [总结目前国内加速拉取 docker 镜像的几种方法：](https://zhuanlan.zhihu.com/p/703322576)
+
 [从Docker Hub拉取镜像受阻？这些解决方案帮你轻松应对：](https://mp.weixin.qq.com/s/pXrxedldKOoD97bMDYy3pQ)
