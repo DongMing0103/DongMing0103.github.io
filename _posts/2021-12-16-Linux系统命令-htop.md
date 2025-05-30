@@ -54,7 +54,7 @@ tags:
 > htop
 ```
 
-![htop展示区域](https://raw.githubusercontents.com/DongMing0103/MarkdownCloudImage/master/data/htop%E5%B1%95%E7%A4%BA%E5%8C%BA%E5%9F%9F.png)
+![htop展示区域](https://raw.githubusercontent.com/DongMing0103/MarkdownCloudImage/master/data/htop%E5%B1%95%E7%A4%BA%E5%8C%BA%E5%9F%9F.png)
 
 说明:
 
@@ -71,7 +71,7 @@ htop通过进度条展示每个CPU逻辑核心的使用百分比,并使用不同
 
 - CPU usage bar
 
-![htop之CPU使用情况](https://raw.githubusercontents.com/DongMing0103/MarkdownCloudImage/master/data/htop%E4%B9%8BCPU%E4%BD%BF%E7%94%A8%E6%83%85%E5%86%B5.png)
+![htop之CPU使用情况](https://raw.githubusercontent.com/DongMing0103/MarkdownCloudImage/master/data/htop%E4%B9%8BCPU%E4%BD%BF%E7%94%A8%E6%83%85%E5%86%B5.png)
 
 > 该行主要显示CPU使用情况,htop还为将不同颜色来区分是使用情况:
 > (1)蓝色的表示low-prority(低优先级)使用
@@ -81,7 +81,7 @@ htop通过进度条展示每个CPU逻辑核心的使用百分比,并使用不同
 
 - Memory bar
 
-![htop之内存使用情况](https://raw.githubusercontents.com/DongMing0103/MarkdownCloudImage/master/data/htop%E4%B9%8B%E5%86%85%E5%AD%98%E4%BD%BF%E7%94%A8%E6%83%85%E5%86%B5.png)
+![htop之内存使用情况](https://raw.githubusercontent.com/DongMing0103/MarkdownCloudImage/master/data/htop%E4%B9%8B%E5%86%85%E5%AD%98%E4%BD%BF%E7%94%A8%E6%83%85%E5%86%B5.png)
 
 > 该行主要表示内存使用情况，同样的htop使用了不同颜色来区分是使用情况:
 > (1)绿色的表示已经使用内存情况
@@ -94,7 +94,7 @@ htop通过进度条展示每个CPU逻辑核心的使用百分比,并使用不同
 
 - 整体状态区域
 
-![htop之整体状态区域](https://raw.githubusercontents.com/DongMing0103/MarkdownCloudImage/master/data/htop%E4%B9%8B%E6%95%B4%E4%BD%93%E7%8A%B6%E6%80%81%E5%8C%BA%E5%9F%9F.png)
+![htop之整体状态区域](https://raw.githubusercontent.com/DongMing0103/MarkdownCloudImage/master/data/htop%E4%B9%8B%E6%95%B4%E4%BD%93%E7%8A%B6%E6%80%81%E5%8C%BA%E5%9F%9F.png)
 
 > (1)Tasks显示进程总数,当前运行的进程数
 > (2)Load average显示的是系统的1分钟,5分钟,10分钟的平均负载情况
@@ -143,15 +143,15 @@ htop通过进度条展示每个CPU逻辑核心的使用百分比,并使用不同
 > **3. Colors：**设定界面以什么颜色来显示，个人认为用处不大，各人喜好不同
 > **4. Colums：**作用是增加或取消要显示的各项内容，选择后F7(向上移动)、F8(向下移动)、F9(取消显示、F10(保存更改))此处增加了PPID、PGRP，根据各人需求，显示那些信息。
 
-![htop之Setup选项](https://raw.githubusercontents.com/DongMing0103/MarkdownCloudImage/master/data/htop%E4%B9%8BSetup%E9%80%89%E9%A1%B9.png)
+![htop之Setup选项](https://raw.githubusercontent.com/DongMing0103/MarkdownCloudImage/master/data/htop%E4%B9%8BSetup%E9%80%89%E9%A1%B9.png)
 
 > Meters 页面设定了顶端的一些信息显示，顶端的显示又分为左右两侧，到底能显示些什么可以在最右侧那栏新增，要新增到上方左侧（F5）或是右侧（F6）都可以，这就是个人设定的范围了。这里多加了一个时钟。
 
-![htop之Setup](https://raw.githubusercontents.com/DongMing0103/MarkdownCloudImage/master/data/htop%E4%B9%8BSetup.png)
+![htop之Setup](https://raw.githubusercontent.com/DongMing0103/MarkdownCloudImage/master/data/htop%E4%B9%8BSetup.png)
 
 > 我们也可以自定义进程区域中的显示内容：
 
-![htop之Setup自定义](https://raw.githubusercontents.com/DongMing0103/MarkdownCloudImage/master/data/htop%E4%B9%8BSetup%E8%87%AA%E5%AE%9A%E4%B9%89.png)
+![htop之Setup自定义](https://raw.githubusercontent.com/DongMing0103/MarkdownCloudImage/master/data/htop%E4%B9%8BSetup%E8%87%AA%E5%AE%9A%E4%B9%89.png)
 
 > **搜索进程：**鼠标点击Search 或者按下F3 或者输入"/"， 输入进程名进行搜索，例如搜索ssh
 > **过滤器：**按下F4，进入过滤器，相当于关键字搜索，不区分大小写，例如过滤dev。
@@ -161,7 +161,7 @@ htop通过进度条展示每个CPU逻辑核心的使用百分比,并使用不同
 > **F7、F8分别对应 nice- 和 nice+**：F7 表示减小 nice值(增大优先级)，F8增大nice值(减小优先级)，选择某一进程，按F7或F8来增大或减小nice值，nice值范围为-20-19
 > **F9 对应 kill 给进程发信号**，选好信号回车就OK了（ **F9：杀掉指定进程**）。选择某一进程按 F9 即可杀死此进程，如下图所示：窗口的左边部分列出的是所有可用的信号，右边部分列出的是进程。只要选中信号，并选择一个进程，然后按下 enter 键，选中的信号就会发送到此进程。
 
-![htop之Setup2](https://raw.githubusercontents.com/DongMing0103/MarkdownCloudImage/master/data/htop%E4%B9%8BSetup2.png)
+![htop之Setup2](https://raw.githubusercontent.com/DongMing0103/MarkdownCloudImage/master/data/htop%E4%B9%8BSetup2.png)
 
 > **F10：**退出htop。
 >

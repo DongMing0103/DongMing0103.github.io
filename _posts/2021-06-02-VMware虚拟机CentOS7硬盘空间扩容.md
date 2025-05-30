@@ -26,7 +26,7 @@ df -h
 
 #执行截图
 
-![查看挂载点信息](https://raw.githubusercontents.com/DongMing0103/MarkdownCloudImage/master/data/%E6%9F%A5%E7%9C%8B%E6%8C%82%E8%BD%BD%E7%82%B9%E4%BF%A1%E6%81%AFdf-h.jpg)
+![查看挂载点信息](https://raw.githubusercontent.com/DongMing0103/MarkdownCloudImage/master/data/%E6%9F%A5%E7%9C%8B%E6%8C%82%E8%BD%BD%E7%82%B9%E4%BF%A1%E6%81%AFdf-h.jpg)
 
  
 
@@ -70,13 +70,13 @@ mkfs.xfs /dev/vda3
 
 #执行截图
 
-![执行fdisk /dev/vda命令](https://raw.githubusercontents.com/DongMing0103/MarkdownCloudImage/master/data/%E6%89%A7%E8%A1%8Cfdisk%20/dev/sda%E5%91%BD%E4%BB%A4.jpg)
+![执行fdisk /dev/vda命令](https://raw.githubusercontent.com/DongMing0103/MarkdownCloudImage/master/data/%E6%89%A7%E8%A1%8Cfdisk%20/dev/sda%E5%91%BD%E4%BB%A4.jpg)
 
-![执行fdisk /dev/vda命令2](https://raw.githubusercontents.com/DongMing0103/MarkdownCloudImage/master/data/%E6%89%A7%E8%A1%8Cfdisk%20/dev/vda%E5%91%BD%E4%BB%A42.jpg)
+![执行fdisk /dev/vda命令2](https://raw.githubusercontent.com/DongMing0103/MarkdownCloudImage/master/data/%E6%89%A7%E8%A1%8Cfdisk%20/dev/vda%E5%91%BD%E4%BB%A42.jpg)
 
-![执行fdisk /dev/vda命令3](https://raw.githubusercontents.com/DongMing0103/MarkdownCloudImage/master/data/%E6%89%A7%E8%A1%8Cfdisk%20/dev/vda%E5%91%BD%E4%BB%A43.jpg)
+![执行fdisk /dev/vda命令3](https://raw.githubusercontent.com/DongMing0103/MarkdownCloudImage/master/data/%E6%89%A7%E8%A1%8Cfdisk%20/dev/vda%E5%91%BD%E4%BB%A43.jpg)
 
-![执行fdisk /dev/vda命令4](https://raw.githubusercontents.com/DongMing0103/MarkdownCloudImage/master/data/%E6%89%A7%E8%A1%8Cfdisk%20/dev/vda%E5%91%BD%E4%BB%A44.jpg)
+![执行fdisk /dev/vda命令4](https://raw.githubusercontent.com/DongMing0103/MarkdownCloudImage/master/data/%E6%89%A7%E8%A1%8Cfdisk%20/dev/vda%E5%91%BD%E4%BB%A44.jpg)
 
 ## 4、添加新LVM到已有的LVM组，实现扩容
 
@@ -104,12 +104,12 @@ lvm> pvdisplay
 lvm> quit
 ```
 
-![lvm命令](https://raw.githubusercontents.com/DongMing0103/MarkdownCloudImage/master/data/lvm.jpg)
+![lvm命令](https://raw.githubusercontent.com/DongMing0103/MarkdownCloudImage/master/data/lvm.jpg)
 
-![vgdisplay命令](https://raw.githubusercontents.com/DongMing0103/MarkdownCloudImage/master/data/vgdisplay%E5%91%BD%E4%BB%A4.jpg)
+![vgdisplay命令](https://raw.githubusercontent.com/DongMing0103/MarkdownCloudImage/master/data/vgdisplay%E5%91%BD%E4%BB%A4.jpg)
 
 
-![pvdisplay命令](https://raw.githubusercontents.com/DongMing0103/MarkdownCloudImage/master/data/pvdisplay%E5%91%BD%E4%BB%A4.jpg)
+![pvdisplay命令](https://raw.githubusercontent.com/DongMing0103/MarkdownCloudImage/master/data/pvdisplay%E5%91%BD%E4%BB%A4.jpg)
 
 ### 4.1、上面只是卷扩容了，下面是文件系统的真正扩容，输入以下命令
 
@@ -121,7 +121,7 @@ lvm> quit
 xfs_growfs /dev/mapper/centos-root
 ```
 
-![扩容完毕](https://raw.githubusercontents.com/DongMing0103/MarkdownCloudImage/master/data/%E6%89%A9%E5%AE%B9%E5%AE%8C%E6%AF%95.jpg)
+![扩容完毕](https://raw.githubusercontent.com/DongMing0103/MarkdownCloudImage/master/data/%E6%89%A9%E5%AE%B9%E5%AE%8C%E6%AF%95.jpg)
 
 <font color="red">未使用以下命令</font>
 
