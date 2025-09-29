@@ -31,7 +31,7 @@ tags:
 
    ``docker run -v /data/openvpn:/etc/openvpn --rm kylemanna/openvpn:latest ovpn_genconfig -u udp://192.168.10.214``
 
-   ````tex
+   ````bash
    Processing PUSH Config: 'block-outside-dns'
    Processing Route Config: '192.168.254.0/24'
    Processing PUSH Config: 'dhcp-option DNS 8.8.8.8'
@@ -44,7 +44,7 @@ tags:
 
    `docker run -v /data/openvpn:/etc/openvpn --rm -it kylemanna/openvpn:latest ovpn_initpki`
 
-   ``` te
+   ``` tex
    输入私钥密码（输入时是看不见的）：
    Enter PEM pass phrase:12345678
    再输入一遍
@@ -79,7 +79,7 @@ tags:
 
 7. 启动openvpn服务
 
-   ``` doc
+   ``` dockerfile
    docker run --name openvpn -v /data/openvpn:/etc/openvpn -d -p 5001:5001/udp --cap-add=NET_ADMIN kylemanna/openvpn:latest
    ```
 
@@ -162,7 +162,7 @@ docker restart openvpn
 
 > 完整实例
 
-``` latex
+``` bash
 *nat
 :PREROUTING ACCEPT [0:0]
 :INPUT ACCEPT [0:0]

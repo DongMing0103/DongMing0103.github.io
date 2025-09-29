@@ -16,7 +16,7 @@ tags:
 
 ## 报错问题
 
-```
+```sql
 Expression #2 of SELECT list is not in GROUP BY clause and contains
 nonaggregated column ‘sss.month_id’ which is not functionally
 dependent on columns in GROUP BY clause; this is incompatible with
@@ -25,7 +25,7 @@ sql_mode=only_full_group_by
 ```
 
 ## 原因
-```
+```sql
 查看mysql版本命令：select version();
 
 查看sql_model参数命令：
@@ -36,7 +36,7 @@ SELECT @@SESSION.sql_mode;
 
 ```
 
-```
+```tex
 
 MySQL 5.7.5及以上功能依赖检测功能。如果启用了ONLY_FULL_GROUP_BY SQL模式（默认情况下），MySQL将拒绝选择列表，HAVING条件或ORDER BY列表的查询引用在GROUP BY子句中既未命名的非集合列，也不在功能上依赖于它们。（5.7.5之前，MySQL没有检测到功能依赖关系，默认情况下不启用ONLY_FULL_GROUP_BY。有关5.7.5之前的行为的说明，请参见“MySQL 5.6参考手册”。）
 

@@ -32,13 +32,13 @@ tags:
 
 - 搜索nexus镜像 `docker search nexus`
 
-  ![docker 搜索 nexus 镜像](https://raw.githubusercontents.com/DongMing0103/MarkdownCloudImage/master/data/docker%E6%90%9C%E7%B4%A2nexus.jpg)
+  ![docker 搜索 nexus 镜像](https://raw.githubusercontent.com/DongMing0103/MarkdownCloudImage/master/data/docker%E6%90%9C%E7%B4%A2nexus.jpg)
 
   
 
 - 下载nexus3镜像`sonatype/nexus3`,该镜像[使用教程](https://hub.docker.com/r/sonatype/nexus3/)
 
-  ![docker下载nexus](https://raw.githubusercontents.com/DongMing0103/MarkdownCloudImage/master/data/docker%E4%B8%8B%E8%BD%BDnexus.jpg)
+  ![docker下载nexus](https://raw.githubusercontent.com/DongMing0103/MarkdownCloudImage/master/data/docker%E4%B8%8B%E8%BD%BDnexus.jpg)
   
   ```bash
   root@localhost:/home$ docker volume create --name nexus-data
@@ -48,7 +48,7 @@ tags:
 
 - 首次启动，注意`data/tools/nexus/nexus-data`目录权限需要修改为`200:200`，对应容器内部的`nexus`用户，不然会因权限不足导致启动失败；`8081`为网页端口，`8082`为镜像上传下载端口
 
-  ```
+  ```bash
   root@localhost:/home/docker/nexus$ sudo chown -R 200:200 /data/tools/docker/nexus/nexus-data/		
     
   root@localhost:/home/docker/nexus$ docker run -d -p 8081:8081 -p 8082:8082 --name nexus -v /home/docker/nexus/nexus-data:/nexus-data sonatype/nexus3
@@ -64,7 +64,7 @@ tags:
 
   - 命令行检测，正常运行时会输出`pong`
 
-    ![](https://raw.githubusercontents.com/DongMing0103/MarkdownCloudImage/master/data/%E6%9F%A5%E7%9C%8Bnexus%E6%98%AF%E5%90%A6%E5%90%AF%E5%8A%A8%E6%88%90%E5%8A%9F.jpg)
+    ![](https://raw.githubusercontent.com/DongMing0103/MarkdownCloudImage/master/data/%E6%9F%A5%E7%9C%8Bnexus%E6%98%AF%E5%90%A6%E5%90%AF%E5%8A%A8%E6%88%90%E5%8A%9F.jpg)
 
     
 
@@ -94,29 +94,29 @@ proxy：代理类型，从远程中央仓库中寻找数据的仓库（可以点
 central：中央仓库
 ```
 
-![nexus页面配置](https://raw.githubusercontents.com/DongMing0103/MarkdownCloudImage/master/data/nexus%E9%A1%B5%E9%9D%A2%E7%AE%A1%E7%90%86.jpg)
+![nexus页面配置](https://raw.githubusercontent.com/DongMing0103/MarkdownCloudImage/master/data/nexus%E9%A1%B5%E9%9D%A2%E7%AE%A1%E7%90%86.jpg)
 
 #### 1. 增加一个代理仓库，使用的是阿里云公共仓库。首先点击“**Create repository**”按钮开始创建一个仓库：
 
-![创建仓库](https://raw.githubusercontents.com/DongMing0103/MarkdownCloudImage/master/data/%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93.jpg)
+![创建仓库](https://raw.githubusercontent.com/DongMing0103/MarkdownCloudImage/master/data/%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93.jpg)
 
 #### 2. 类型选择 **maven2**（**proxy**）
 
-![类型选择maven2](https://raw.githubusercontents.com/DongMing0103/MarkdownCloudImage/master/data/%E7%B1%BB%E5%9E%8B%E9%80%89%E6%8B%A9.jpg)
+![类型选择maven2](https://raw.githubusercontent.com/DongMing0103/MarkdownCloudImage/master/data/%E7%B1%BB%E5%9E%8B%E9%80%89%E6%8B%A9.jpg)
 
 
 
 #### 3. 配置阿里云地址 **http://maven.aliyun.com/nexus/content/groups/public/**，**name** 可以随意填（这里我写 **aliyun-proxy**）,然后点击最下方按钮创建
 
-![配置阿里云地址](https://raw.githubusercontents.com/DongMing0103/MarkdownCloudImage/master/data/%E9%85%8D%E7%BD%AE%E9%98%BF%E9%87%8C%E4%BA%91%E5%9C%B0%E5%9D%80.jpg)
+![配置阿里云地址](https://raw.githubusercontent.com/DongMing0103/MarkdownCloudImage/master/data/%E9%85%8D%E7%BD%AE%E9%98%BF%E9%87%8C%E4%BA%91%E5%9C%B0%E5%9D%80.jpg)
 
 #### 4. 阿里云代理仓库创建完毕后，我们编辑 **maven-public**，将其添加到放入 **group** 中，并调整优先级，然后保存
 
-![调整优先级](https://raw.githubusercontents.com/DongMing0103/MarkdownCloudImage/master/data/%E8%B0%83%E6%95%B4%E4%BC%98%E5%85%88%E7%BA%A7.jpg)
+![调整优先级](https://raw.githubusercontent.com/DongMing0103/MarkdownCloudImage/master/data/%E8%B0%83%E6%95%B4%E4%BC%98%E5%85%88%E7%BA%A7.jpg)
 
 #### 5. copy私服地址
 
-![copy私服地址](https://raw.githubusercontents.com/DongMing0103/MarkdownCloudImage/master/data/copy%E7%A7%81%E6%9C%8D%E5%9C%B0%E5%9D%80.jpg)
+![copy私服地址](https://raw.githubusercontent.com/DongMing0103/MarkdownCloudImage/master/data/copy%E7%A7%81%E6%9C%8D%E5%9C%B0%E5%9D%80.jpg)
 
 
 
@@ -255,7 +255,7 @@ central：中央仓库
 
 （3）执行 **mvn deploy** 命令发布：
 
-![执行mvn deploy](https://raw.githubusercontents.com/DongMing0103/MarkdownCloudImage/master/data/%E6%89%A7%E8%A1%8Cmvn%20deploy.jpg)
+![执行mvn deploy](https://raw.githubusercontent.com/DongMing0103/MarkdownCloudImage/master/data/%E6%89%A7%E8%A1%8Cmvn%20deploy.jpg)
 
 （4）登录 **Nexus**，查看对应的仓库已经有相关的依赖包了。
 ``` 
@@ -263,7 +263,7 @@ central：中央仓库
 若项目版本号末尾带有 -SNAPSHOT，则会发布到 snapshots 快照版本仓库
 若项目版本号末尾带有 -RELEASES 或什么都不带，则会发布到 releases 正式版本仓库
 ```
-![查看上传结果](https://raw.githubusercontents.com/DongMing0103/MarkdownCloudImage/master/data/%E6%9F%A5%E7%9C%8B%E4%B8%8A%E4%BC%A0%E7%BB%93%E6%9E%9C.jpg)
+![查看上传结果](https://raw.githubusercontent.com/DongMing0103/MarkdownCloudImage/master/data/%E6%9F%A5%E7%9C%8B%E4%B8%8A%E4%BC%A0%E7%BB%93%E6%9E%9C.jpg)
 
 
 
